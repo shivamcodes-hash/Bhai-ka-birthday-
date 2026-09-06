@@ -1,0 +1,677 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Rishab Birthday 😂</title>
+
+<style>
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    min-height:100vh;
+    overflow-x:hidden;
+    font-family:Arial, sans-serif;
+    text-align:center;
+    color:white;
+    background:
+    radial-gradient(circle at top,#5b0b78,#19002d 55%,#050008);
+}
+
+/* PAGES */
+
+.page{
+    min-height:100vh;
+    display:none;
+    justify-content:center;
+    align-items:center;
+    flex-direction:column;
+    padding:30px 20px;
+}
+
+.page.active{
+    display:flex;
+}
+
+/* TEXT */
+
+h1{
+    font-size:42px;
+    margin-bottom:20px;
+    text-shadow:0 0 20px #ff00cc;
+}
+
+h2{
+    margin-bottom:20px;
+}
+
+p{
+    max-width:650px;
+    font-size:20px;
+    line-height:1.6;
+}
+
+/* WARNING */
+
+.warning{
+    max-width:650px;
+    margin:25px 0;
+    padding:18px;
+    border:2px solid #ffd000;
+    border-radius:18px;
+    background:rgba(255,200,0,.12);
+    color:#ffe98a;
+    font-weight:bold;
+    box-shadow:0 0 20px rgba(255,200,0,.25);
+}
+
+/* BUTTON */
+
+button{
+    border:none;
+    padding:15px 25px;
+    margin:12px;
+    border-radius:30px;
+    font-size:18px;
+    font-weight:bold;
+    cursor:pointer;
+    color:white;
+}
+
+.next{
+    background:#ff36d1;
+    box-shadow:0 0 25px #ff36d1;
+}
+
+.next:hover{
+    transform:scale(1.07);
+}
+
+/* ROAST BOX */
+
+.roast{
+    max-width:650px;
+    margin:15px;
+    padding:22px;
+    border-radius:20px;
+    background:rgba(255,255,255,.10);
+    border:1px solid rgba(255,255,255,.2);
+}
+
+/* BIG TIKKI */
+
+.tikki{
+    font-size:65px;
+    font-weight:bold;
+    animation:bounce .8s infinite alternate;
+    text-shadow:0 0 25px #ff00cc;
+}
+
+@keyframes bounce{
+
+    from{
+        transform:scale(1);
+    }
+
+    to{
+        transform:scale(1.08);
+    }
+
+}
+
+/* GIFTS */
+
+.gifts{
+    display:flex;
+    justify-content:center;
+    flex-wrap:wrap;
+    gap:25px;
+    margin:30px;
+}
+
+.gift{
+    width:135px;
+    height:135px;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    border-radius:20px;
+    background:linear-gradient(135deg,#ff174f,#ff6b00);
+    font-size:60px;
+    cursor:pointer;
+    box-shadow:0 0 30px rgba(255,60,80,.6);
+    transition:.3s;
+}
+
+.gift:hover{
+    transform:translateY(-10px) rotate(5deg);
+}
+
+/* GIFT MESSAGE */
+
+#giftMessage{
+    min-height:70px;
+}
+
+/* YES / NO */
+
+.choice{
+    position:relative;
+    width:100%;
+    max-width:600px;
+    height:180px;
+}
+
+#yesBtn{
+    background:#00c878;
+    box-shadow:0 0 20px #00c878;
+}
+
+#noBtn{
+    background:#ff3030;
+    position:absolute;
+    left:50%;
+    transform:translateX(80px);
+    transition:.2s;
+}
+
+/* PHOTO */
+
+.photo{
+    width:290px;
+    max-width:90%;
+    border-radius:25px;
+    border:4px solid white;
+    margin:25px;
+    box-shadow:0 0 35px #ff00cc;
+}
+
+/* FIREWORK */
+
+#fireworks{
+    position:fixed;
+    inset:0;
+    pointer-events:none;
+    z-index:100;
+}
+
+.firework{
+    position:absolute;
+    font-size:35px;
+    animation:explode 1.5s ease-out forwards;
+}
+
+@keyframes explode{
+
+    0%{
+        transform:scale(.2);
+        opacity:1;
+    }
+
+    100%{
+        transform:scale(3);
+        opacity:0;
+    }
+
+}
+
+/* MOBILE */
+
+@media(max-width:600px){
+
+    h1{
+        font-size:32px;
+    }
+
+    .tikki{
+        font-size:52px;
+    }
+
+    .gift{
+        width:110px;
+        height:110px;
+        font-size:50px;
+    }
+
+}
+
+</style>
+</head>
+
+
+<body>
+
+<div id="fireworks"></div>
+
+
+<!-- ================= PAGE 1 ================= -->
+
+<section class="page active" id="page1">
+
+    <div style="font-size:50px;">
+        🎉 🤡 🎂 🤡 🎉
+    </div>
+
+    <h1>
+        HAPPY BIRTHDAY RISHAB 🎂
+    </h1>
+
+    <p>
+        7 September ko duniya mein ek aur
+        <b>legend</b> paida hua tha...
+    </p>
+
+    <div class="tikki">
+        TIKKI 😂
+    </div>
+
+    <div class="warning">
+
+        ⚠️ Warning: Is page ko dekhne se Tikki ki beizzati badh sakti hai.
+
+    </div>
+
+    <button class="next" onclick="nextPage(2)">
+        BEIZZATI SHURU KARO 😂
+    </button>
+
+</section>
+
+
+
+<!-- ================= PAGE 2 ================= -->
+
+<section class="page" id="page2">
+
+    <h1>
+        🚨 TIKKI ROAST CENTER 🚨
+    </h1>
+
+    <div class="roast">
+
+        <p>
+            🎂 Birthday tera hai...
+            <br><br>
+
+            Lekin khushi humko ho rahi hai,
+            kyunki aaj ek aur saal tak
+            <b>teri beizzati karne ka license</b>
+            mil gaya. 😂
+        </p>
+
+    </div>
+
+    <div class="roast">
+
+        <p>
+            Umar badh rahi hai ✔️
+            <br>
+            Samajhdaari badh rahi hai ❌
+            <br>
+            Tikki wali harkatein 📈📈📈
+        </p>
+
+    </div>
+
+    <button class="next" onclick="nextPage(3)">
+        GIFTS DEKH TIKKI 🎁
+    </button>
+
+</section>
+
+
+
+<!-- ================= PAGE 3 ================= -->
+
+<section class="page" id="page3">
+
+    <h1>
+        🎁 TIKKI KE GIFTS 🎁
+    </h1>
+
+    <p>
+        Sirf <b>EK</b> gift sahi hai...
+        <br>
+        dekhte hain kitni akal hai tere mein 😂
+    </p>
+
+    <div class="gifts">
+
+        <div class="gift" onclick="wrongGift()">
+            🎁
+        </div>
+
+        <div class="gift" onclick="correctGift()">
+            🎁
+        </div>
+
+        <div class="gift" onclick="wrongGift()">
+            🎁
+        </div>
+
+    </div>
+
+    <div class="roast" id="giftMessage">
+
+        Gift choose kar Tikki 😂
+
+    </div>
+
+    <button
+        class="next"
+        id="giftNext"
+        onclick="nextPage(4)"
+        style="display:none;"
+    >
+        CHAL AAGE 😈
+    </button>
+
+</section>
+
+
+
+<!-- ================= PAGE 4 ================= -->
+
+<section class="page" id="page4">
+
+    <h1>
+        😈 EK IMPORTANT SAWAAL
+    </h1>
+
+    <div class="roast">
+
+        <p>
+            Tikki, kya tu maanta hai ki
+            <br><br>
+
+            <b>
+                TU DUNIYA KA SABSE LEGENDARY TIKKI HAI? 😂
+            </b>
+        </p>
+
+    </div>
+
+    <div class="choice">
+
+        <button id="yesBtn" onclick="yesClicked()">
+            HAAN 😎
+        </button>
+
+        <button id="noBtn" onclick="noClicked()">
+            NAHI 😭
+        </button>
+
+    </div>
+
+</section>
+
+
+
+<!-- ================= PAGE 5 ================= -->
+
+<section class="page" id="page5">
+
+    <h1>
+        🎆 HAPPY BIRTHDAY TIKKI 🎆
+    </h1>
+
+    <div class="tikki">
+        CONGRATULATIONS 😂
+    </div>
+
+    <div class="roast">
+
+        <p>
+
+            Ek aur saal successfully complete! 🥳
+
+            <br><br>
+
+            Age badh gayi ✔️
+            <br>
+            Akal wahi ki wahi ❌
+            <br>
+            Trolling material ♾️
+
+        </p>
+
+    </div>
+
+    <button class="next" onclick="nextPage(6)">
+        LAST SURPRISE 📸
+    </button>
+
+</section>
+
+
+
+<!-- ================= PAGE 6 ================= -->
+
+<section class="page" id="page6">
+
+    <h1>
+        📸 ASLI SURPRISE
+    </h1>
+
+    <p>
+        Ab zara apna asli roop dekho Tikki 😂
+    </p>
+
+    <img
+        src="rishab.jpg"
+        class="photo"
+        alt="Rishab"
+        onerror="this.style.display='none';"
+    >
+
+    <div class="tikki">
+        TIKKI 🤡
+    </div>
+
+    <div class="roast">
+
+        <h2>
+            🏆 OFFICIAL AWARD 🏆
+        </h2>
+
+        <p>
+            Lifetime Achievement Award
+            <br>
+            for Being The Most Trollable Friend 😂
+        </p>
+
+    </div>
+
+    <div class="roast">
+
+        <p style="font-size:24px;">
+
+            🎂 Happy Birthday bhai ❤️😂
+
+            <br><br>
+
+            <b>
+                Chal laude 😂
+                <br>
+                ab apne baap ko party de diyo 🍕🎂🔥
+            </b>
+
+        </p>
+
+    </div>
+
+</section>
+
+
+
+<script>
+
+/* CURRENT PAGE */
+
+let currentPage = 1;
+
+
+/* CHANGE PAGE */
+
+function nextPage(page){
+
+    document
+        .getElementById("page" + currentPage)
+        .classList.remove("active");
+
+    document
+        .getElementById("page" + page)
+        .classList.add("active");
+
+    currentPage = page;
+
+    window.scrollTo({
+        top:0,
+        behavior:"smooth"
+    });
+
+    fireworks();
+
+}
+
+
+/* WRONG GIFT */
+
+function wrongGift(){
+
+    document
+        .getElementById("giftMessage")
+        .innerHTML =
+        "Chiiii yrrr 🤦‍♂️ Chaka hai kya? Itna aasan sa choose nhi kar paa raha h 😂";
+
+    fireworks();
+
+}
+
+
+/* CORRECT GIFT */
+
+function correctGift(){
+
+    document
+        .getElementById("giftMessage")
+        .innerHTML =
+        "Badiya bete 😎❤️ Sahi jaa rha mera londa 🔥";
+
+    document
+        .getElementById("giftNext")
+        .style.display = "inline-block";
+
+    fireworks();
+
+}
+
+
+/* NO BUTTON */
+
+function noClicked(){
+
+    const btn =
+        document.getElementById("noBtn");
+
+    alert("Bas kar Tikki 💀 YES daba!");
+
+    const x =
+        Math.random() * 350 - 175;
+
+    const y =
+        Math.random() * 100 - 50;
+
+    btn.style.transform =
+        "translate(" + x + "px," + y + "px)";
+
+}
+
+
+/* YES */
+
+function yesClicked(){
+
+    alert(
+        "😂 Mujhe pata tha Tikki maan jayega!"
+    );
+
+    nextPage(5);
+
+}
+
+
+/* FIREWORKS */
+
+function fireworks(){
+
+    const container =
+        document.getElementById("fireworks");
+
+    for(let i = 0; i < 20; i++){
+
+        const f =
+            document.createElement("div");
+
+        f.className = "firework";
+
+        const emojis = [
+            "🎆",
+            "✨",
+            "🎉",
+            "💥",
+            "⭐"
+        ];
+
+        f.innerHTML =
+            emojis[
+                Math.floor(
+                    Math.random() * emojis.length
+                )
+            ];
+
+        f.style.left =
+            Math.random() * 100 + "%";
+
+        f.style.top =
+            Math.random() * 80 + "%";
+
+        container.appendChild(f);
+
+        setTimeout(function(){
+
+            f.remove();
+
+        },1500);
+
+    }
+
+}
+
+
+/* AUTO FIREWORKS */
+
+setInterval(function(){
+
+    if(
+        currentPage === 1 ||
+        currentPage === 5 ||
+        currentPage === 6
+    ){
+
+        fireworks();
+
+    }
+
+},2500);
+
+</script>
+
+</body>
+</html>
